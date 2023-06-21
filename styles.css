@@ -1,0 +1,181 @@
+body{
+background-color: grey;
+color: darkblue;
+}
+
+h1{
+    background-color: black;
+    color: green;
+    font-family: Times New Roman;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2{
+    background-color: orangered;
+    color: black;
+    font-family: ravie;
+    font-size: 15px;
+    padding: 20px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 30%;
+}
+h3{
+    background-color: blue;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    padding: 20px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 30%;
+}
+
+h4{
+    background-color: blue;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 25px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 30%;
+}
+
+p{
+    background-color: white;
+    font-family: ravie;
+    font-size: 12px;
+    padding: 20px;
+    margin: 10px;
+    text-align:center;
+    border-radius: 30%;
+}
+
+.container {
+    color: black;
+    border-radius: 50%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  
+.column {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.container-nav{
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+
+li>a{
+    padding: 8px 24px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration:none;
+    font-family: monospace;
+    font-size: 15px;
+  }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+  }
+
+.button-menu-toggle {
+    display: none;
+  }
+
+.tierra{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .botonsito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    gap: 20px;
+
+  }
+
+  .greeting{
+    text-align: center;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px){
+    .column {
+      flex: 100%;
+    }
+    
+    .nav-links {
+        display: none;
+      }
+    
+    
+      .button-menu-toggle {
+        display: block;
+        background-color: white;
+        border:none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+      }
+     
+      .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: rgba(20,20,20,0.95);
+        width: 100%;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        font-size: 40px;
+    }
+
+}
